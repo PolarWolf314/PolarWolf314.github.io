@@ -14,8 +14,12 @@ html, body {
     padding: 0;
 }
 
+/* Working on nav styling */
+
 .nav ul {
+    list-style-type: none;
     margin: 0;
+    padding: 0;
 }
 
 .nav li {
@@ -29,20 +33,19 @@ html, body {
     text-decoration: none;
 }
 
-.main-nav {
-    text-align: center;
-    font-size: 1.1em;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-.main-nav {
-    padding: 0 1%;
-}
-
 .nav a:hover {
     transition-duration: 0.2s;
     background-color: rgba(255, 255, 255, .3);
     border-radius: 4px;
+}
+
+/* Main Page */
+
+.main-nav {
+    text-align: center;
+    font-size: 1.1em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 0 1%;
 }
 
 .main-header {
@@ -74,12 +77,28 @@ html, body {
     display: inline-block;
     font-size: 16px;
     border-radius: 8px;
+    cursor: pointer;
 }
 
 .main-buttons:hover {
     transition-duration: 0.4s;
     background-color: rgba(255, 255, 255, 14%);
+    color: aquamarine;
 }
+
+.index-p {
+    padding-top: 0.3%;
+    padding-bottom: 1%;
+}
+
+/* Tiki page settings */
+
+.tiki-image {
+    width: 450px;
+    margin: auto;
+}
+
+/* Global features */
 
 ul {
     list-style-type: none;
@@ -90,9 +109,10 @@ ul {
 p {
     width: 960px;
     margin: auto;
+    padding: 2px;
 }
 
-.index-p {
-    padding-top: 0.3%;
-    padding-bottom: 1%;
+a:hover {
+    transition-duration: 0.1s;
+    color: aquamarine;
 }
