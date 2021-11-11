@@ -7,11 +7,14 @@
     color: #FFFFFF;
     background-color: #121212;
     text-align: center;
+
+    --header-height: 40px;
 }
 
 html, body {
     margin: 0;
     padding: 0;
+    overflow-y: hidden;
 }
 
 /* Working on nav styling */
@@ -45,7 +48,8 @@ html, body {
     text-align: center;
     font-size: 1.1em;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    padding: 0 1%;
+    min-height: var(--header-height);
+    max-height: var(--header-height);
 }
 
 .main-header {
@@ -115,4 +119,9 @@ p {
 a:hover {
     transition-duration: 0.1s;
     color: aquamarine;
+}
+
+.body-content {
+    height: calc(100vh - var(--header-height));
+    overflow-y: auto;
 }
